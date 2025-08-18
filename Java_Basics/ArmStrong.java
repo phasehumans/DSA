@@ -2,32 +2,28 @@ package Java_Basics;
 
 import java.util.Scanner;
 
-public class ArmStrong_Number {
+public class ArmStrong {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
-        System.out.print("Enter number: ");
+        System.out.print("Enter num: ");
         int num= sc.nextInt();
 
-        int og= num;
+        int original= num;
         int sum= 0;
 
-        int digits= String.valueOf(num).length();
-//        System.out.println(digits);
+        int lengthNum= String.valueOf(num).length();
 
-        while (num != 0) {
-            int digit = num % 10;
-            sum += Math.pow(digit, digits);
+        while(num != 0){
+            int lastDigit= num % 10;
+            sum += Math.pow(lastDigit, lengthNum);
             num /= 10;
             System.out.println(sum);
         }
-
-        if (sum == og){
+        if (sum == original){
             System.out.println("ArmStrong");
         }else{
             System.out.println("Not ArmStrong");
         }
-
-
 
     }
 }
