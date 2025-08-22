@@ -18,6 +18,7 @@ public class Input {
 //        for each loop (enhanced loop)
         for(int num: arr){
             System.out.print(num + " | ");
+//            num represent each elmt of arr
         }
     }
 }
