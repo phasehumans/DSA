@@ -1,4 +1,3 @@
-package Java_Basics;
 
 import java.awt.*;
 import java.util.Scanner;

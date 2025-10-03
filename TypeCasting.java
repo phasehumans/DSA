@@ -1,4 +1,4 @@
-package Java_Basics;
+
 
 public class TypeCasting {
     public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class TypeCasting {
         System.out.println(b);
 //        256(byte size) %  259
 
-//        java is unicode (all lang support)
+//        java is Unicode (all lang support)
         System.out.println("नमस्ते");
 
     }
